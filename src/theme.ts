@@ -175,7 +175,9 @@ export async function prepareTheme(configuration: ConfigurationType) {
   async function copyStaticAssets() {
     info('Copying static assets');
     const staticAssetsPath = path.join(repoPath, 'static');
-    fsExtra.copySync(staticAssetsPath, path.join(outputDir, 'static'));
+    const staticOutput =  path.join(outputDir, 'static')
+    info(`Copying static file to ${staticOutput}`)
+    fsExtra.copySync(staticAssetsPath,staticOutput);
   }
 
   // Remove and recreate the output directory
