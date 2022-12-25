@@ -173,7 +173,6 @@ export async function prepareTheme(configuration: ConfigurationType) {
   }
 
   async function copyStaticAssets() {
-    info('Copying static assets');
     const staticAssetsPath = path.join(repoPath, 'static');
     const staticOutput =  path.join(outputDir, 'static')
     info(`Copying static file to ${staticOutput}`)
