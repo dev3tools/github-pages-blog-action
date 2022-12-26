@@ -21,6 +21,12 @@
 
     <link rel="stylesheet" href="<%- `${siteConfig.baseUrl || ''}/` %>css/normalize.css"/>
     <link rel="stylesheet" href="<%- `${siteConfig.baseUrl || ''}/` %>css/theme.css"/>
+
+    <script type="text/javascript" src="<%- `${siteConfig.baseUrl || ''}/` %>js/highlight.min.js"></script>
+    <script type="text/javascript" src="<%- `${siteConfig.baseUrl || ''}/` %>js/solidity.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </head>
 <body>
 <nav class="nav">
