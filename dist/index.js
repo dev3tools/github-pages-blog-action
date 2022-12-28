@@ -374,13 +374,13 @@ function prepareTheme(configuration) {
             });
         }
         function copyStaticAssets() {
-          return __awaiter(this, void 0, void 0, function* () {
-              const staticAssetsPath = path_1.default.join(repoPath, 'static');
-              const staticOutput = path_1.default.join(outputDir, 'static');
-              (0, core_1.info)(`Copying static file to ${staticOutput}`);
-              fs_extra_1.default.copySync(staticAssetsPath, staticOutput);
-          });
-      }
+            return __awaiter(this, void 0, void 0, function* () {
+                const staticAssetsPath = path_1.default.join(repoPath, 'static');
+                const staticOutput = path_1.default.join(outputDir, 'static');
+                (0, core_1.info)(`Copying static file to ${staticOutput}`);
+                fs_extra_1.default.copySync(staticAssetsPath, staticOutput);
+            });
+        }
         // Remove and recreate the output directory
         fs_extra_1.default.removeSync(configuration.outputDir);
         fs_extra_1.default.ensureDirSync(configuration.outputDir);
